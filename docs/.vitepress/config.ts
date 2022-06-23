@@ -20,6 +20,16 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/zxTick/zt-form-docs/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
-    }
+    },
+    sidebar: [
+      {
+        text: 'Guide',
+        items: [
+          { text: '快速入门', link: '../guide/getting-started.md' },
+          { text: '配置说明', link: '../guide/configuration-notes.md' },
+          { text: '获取参数', link: '../guide/generator-params.md' }
+        ]
+      }
+    ]
   }
 })
