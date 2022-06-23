@@ -1,4 +1,4 @@
-import { DefaultTheme, defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'ZTForm',
