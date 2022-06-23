@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: ZTForm
-  text: 一个高效的表单封装
+  text: an efficient form wrapper
   tagline: a framework to help you build your form library easily
   image: 
     src: /logo.png
@@ -24,7 +24,7 @@ features:
     details: It's TypeSafe by using TypeScript. 
   - icon: ⚡️
     title: improve your development experience
-    details: build your Canvas Application Fast and Easy 
+    details: build your naive form Application Fast and Easy 
   - icon: 🛠️
     title: rich api and features 
     details: we wrapped lots of useful features for you 
