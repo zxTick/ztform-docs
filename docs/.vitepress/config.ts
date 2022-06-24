@@ -29,7 +29,9 @@ export default defineConfig({
           { text: '配置说明', link: '../guide/configuration-notes.md' },
           { text: '获取参数', link: '../guide/generator-params.md' },
           { text: '表单重制', link: '../guide/reset.md' },
-          { text: '表单更新', link: '../guide/update.md' }
+          { text: '表单更新', link: '../guide/update.md' },
+          { text: '表单校验模式一', link: '../guide/validator-one.md' },
+          { text: '表单校验模式二', link: '../guide/validator-two.md' }
         ]
       }
     ]
