@@ -27,7 +27,8 @@ export default defineConfig({
         items: [
           { text: '快速入门', link: '../guide/getting-started.md' },
           { text: '配置说明', link: '../guide/configuration-notes.md' },
-          { text: '获取参数', link: '../guide/generator-params.md' }
+          { text: '获取参数', link: '../guide/generator-params.md' },
+          { text: '表单重制', link: '../guide/reset.md' },
         ]
       }
     ]
