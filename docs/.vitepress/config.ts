@@ -32,7 +32,7 @@ export default defineConfig({
           { text: '表单更新', link: '../guide/update.md' },
           { text: '表单校验模式一', link: '../guide/validator-one.md' },
           { text: '表单校验模式二', link: '../guide/validator-two.md' },
-          { text: '监听模式', link: '../guide/watch-two.md' },
+          { text: '监听模式', link: '../guide/watch.md' },
         ]
       }
     ]
