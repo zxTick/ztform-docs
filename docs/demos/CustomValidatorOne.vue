@@ -38,9 +38,8 @@ const options: FormPlusItem[] = [
 ]
 
 function naiveValidator() {
-  ztFromRef.value?.navieValidator(() => {
-    console.log('验证通过')   
-  })
+  console.log(ztFromRef.value?.validator());
+  
 }
 </script>
 
