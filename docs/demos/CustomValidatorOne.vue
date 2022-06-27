@@ -12,24 +12,16 @@ const options: FormPlusItem[] = [
     label: '账号',
     key: 'username',
     type: 'Input',
-    required: true,
-    validator(item, message) {
-      const {value} = item
-      if(value[0] === '1') {
-        message.error('账号不能以1开头')
-        return false
-      } else {
-        return true
-      }
-    }
+    naive: true,
   },
   {
     label: '爱好',
     key: 'like',
     type: 'Select',
-    required: true,
+    message: 'zx 和 tick',
+    naive: true,
     axiosOptions() {
-      return new Promise((resolve, ) => {
+      return new Promise((resolve) => {
         resolve([
           {
             label: '打篮球',
@@ -45,10 +37,10 @@ const options: FormPlusItem[] = [
   }
 ]
 
-function validator() {
-  console.log(ztFromRef.value?.validator());
-  // 如果验证通过则为 true，否则为 false
-  
+function naiveValidator() {
+  ztFromRef.value?.navieValidator(() => {
+    console.log('验证通过')   
+  })
 }
 </script>
 
@@ -56,7 +48,7 @@ function validator() {
   <Card>
     <zt-form :options="options" preset="grid-item" ref="ztFromRef" />
     <div>
-      <NButton @click="validator">校验</NButton>
+      <NButton @click="naiveValidator">验证</NButton>
     </div>
   </Card>
 </template>

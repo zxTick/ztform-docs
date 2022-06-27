@@ -92,9 +92,9 @@ const options: FormPlusItem[] = [
     type: 'Input',
     required: true,
     validator(item, message) {
-      const {value} = item
-      if(value[0] === '1') {
-        message.error('账号不能以1开头')
+      const {value = ''} = item
+      if(value === null || value[0] === '1') {
+        message.error('账号规则不正确')
         return false
       } else {
         return true
@@ -138,4 +138,5 @@ function validator() {
     </div>
   </Card>
 </template>
+
 ```
