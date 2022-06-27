@@ -12,7 +12,16 @@ const options: FormPlusItem[] = [
     label: '账号',
     key: 'username',
     type: 'Input',
-    required: true
+    required: true,
+    validator(item, message) {
+      const {value} = item
+      if(value[0] === '1') {
+        message.error('账号不能以1开头')
+        return false
+      } else {
+        return true
+      }
+    }
   },
   {
     label: '爱好',

@@ -446,7 +446,7 @@ defineExpose({
 
           <template v-else-if="item.type === 'Null'"> </template>
           <template v-if="item.required">
-            <span class="text-red-600 ml-2">*</span>
+            <span class="text-red-600 ml-2" style="color:red;margin-left:0.5rem;">*</span>
           </template>
         </n-form-item>
       </template>
@@ -557,7 +557,7 @@ defineExpose({
             </template>
             <template v-else-if="item.type === 'Null'"> </template>
             <template v-if="item.required">
-              <span class="text-red-600 ml-2">*</span>
+              <span class="text-red-600 ml-2" style="color:red;margin-left:0.5rem;">*</span>
             </template>
           </n-form-item-gi>
         </template>
