@@ -47,7 +47,7 @@ export interface FormPlusItem {
     | 'any'
   label: string
   key: string
-  type: 'Input' | 'InputNum' | "Select" | 'CheckBox' | 'Radio' | 'Picker' | 'Time' | 'Switch' | 'TreeSelect' | 'Transfer' | 'null',
+  type: 'Input' | 'InputNum' | "Select" | 'Checkbox' | 'Radio' | 'Picker' | 'Time' | 'Switch' | 'TreeSelect' | 'Transfer' | 'Null',
   size?: 'small' | 'medium' | 'large' | undefined
   cops?: object
   path?: string
@@ -68,7 +68,7 @@ export interface FormPlusItem {
     params: FormPlusData[],
     value: string[],
     self: FormPlusData
-  ) => Promise<any[]>
+  ) => Promise<any[]> | void
 }
 export interface FormPlusData extends FormPlusItem {
   value: any | null

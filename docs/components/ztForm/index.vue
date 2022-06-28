@@ -153,7 +153,7 @@ function initWatch() {
     let stopWatch = watch(collectTheKeyFunction, async newValue => {
       openComponentLoading(item)
       const res =
-        item.watchCallBack && (await item.watchCallBack(params, newValue, item))
+        item.watchCallBack && (await item.watchCallBack(params, newValue, item)) || []
       if (item._isWatchUpdate) {
         item.value = null
       } else {
