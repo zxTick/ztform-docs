@@ -19,8 +19,7 @@ const options: FormPlusItem[] = [
     type: 'Select',
     axiosOptions() {
       return new Promise((resolve, reject) => {
-        resolve([
-          {
+        resolve([ {
             label: '打篮球',
             value: '0'
           },
